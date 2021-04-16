@@ -17,7 +17,7 @@ if __name__ == "__main__":
     num = int(input('enter number')) 
     factors = []
     while num > 1:
-        for i in range(num + 1):
+        for i in range(int((num + 1) ** 0.5)):
             if not i == 1 and not i == 0 and num % i == 0 and isprime(i):
                 num = int(num / i)
                 factors.append(i)
